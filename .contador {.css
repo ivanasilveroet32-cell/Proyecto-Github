@@ -1,0 +1,16 @@
+.contador {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    transition: background 0.3s;
+}
+ #c3:checked ~ .caja {
+    background: crimson;
+ }
