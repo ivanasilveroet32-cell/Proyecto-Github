@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"
+        <title>Generar Lista</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(0, 0, 0);
+                color: rgb(100, 100, 100) ;
+                text-align: center;
+                padding: 20px;
+                 
+              }
+
+              button {
+                padding: 5px;
+                background-color: #333;
+                border-radius: 5px;
+              }
+               .resaltado {
+                background-color: crimson;
+                color: white;
+                font-weight: bold;
+               }
+        </style>
+    </head>
+    <body>
+        <h1>Esta</h1>
+        <button id="btngenerar">Generar listas</button>
+        <ul id="contenedor"></ul>
+        <script>
+            document.getElementById("btnGenerate").addEventListener("click", function() {
+                const contenedor = document.getElementById("contenedor") ;
+                contenedor.innerHTML = "";
+                for (let i = 1; i <= 15; i++); {
+                    const item = documetn.createElement ("li");
+                    item.textContent = "Elemento " + i;
+
+                    if (i === 10) {
+                        item.classList.add("resultado");
+                    }
+                    contenedor.appendChild(item);
+                }
+            });
+        </script>
+    </body>
+</html>
