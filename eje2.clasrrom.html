@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Saludo</title>
+    <style>
+        :root {
+            --bg-default: #a3a3a3;
+            --bg-morning: #fef9e7;
+            --bg-afternoon: #fdf2e9;
+            --bg-evening: #00a2ff;
+            --text-color: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-default);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .options-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border: 2px solid transparent;
+            border-radius: 16px;
+            padding: 20px;
+            width: 140px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .card.morning.active {
+            border-color: #f1c40f;
+            background-color: #fffcf5;
+        }
+
+        .card.afternoon.active {
+            border-color: #e67e22;
+            background-color: #fff3e0;
+        }
+
+        .card.evening.active {
+            border-color: #2980b9;
+            background-color: #e3f2fd;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .time-label {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .greeting-display {
+            margin-top: 40px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            min-height: 60px;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¿Qué momento del día es?</h1>
+        
+        <div class="options-container">
+            <!-- Mañana -->
+            <div class="card morning" onclick="setGreeting('morning', '¡Buenos días! ☀️', 'var(--bg-morning)')">
+                <span class="icon">🌅</span>
+                <span class="time-label">Mañana</span>
+            </div>
+
+            <!-- Tarde -->
+            <div class="card afternoon" onclick="setGreeting('afternoon', '¡Buenas tardes! 🌤️', 'var(--bg-afternoon)')">
+                <span class="icon">🌆</span>
+                <span class="time-label">Tarde</span>
+            </div>
+
+            <!-- Noche -->
+            <div class="card evening" onclick="setGreeting('evening', '¡Buenas noches! 🌙', 'var(--bg-evening)')">
+                <span class="icon">🌃</span>
+                <span class="time-label">Noche</span>
+            </div>
+        </div>
+
+       
+        <div class="greeting-display" id="greetingText"></div>
+    </div>
+
+    <script>
+        function setGreeting(timeOfDay, message, bgColor) {
+           
+            const display = document.getElementById('greetingText');
+            display.style.opacity = 0; 
+            
+            setTimeout(() => {
+                display.innerText = message;
+                display.style.opacity = 1;
+            }, 150);
+
+            
+            document.body.style.backgroundColor = bgColor;
+
+            
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.remove('active');
+            });
+            document.querySelector(`.${timeOfDay}`).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

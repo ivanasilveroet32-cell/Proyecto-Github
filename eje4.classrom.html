@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiador de Color Puro CSS</title>
+    <style>
+       
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
+            background-color: #8b8b8b; 
+            transition: background-color 0.4s ease;
+        }
+
+       
+        .color-radio {
+            display: none;
+        }
+
+      
+        .panel {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+       
+        .color-label {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .color-label:hover {
+            transform: scale(1.15);
+        }
+
+        .lbl-azul { background-color: #ce0c0c; }
+        .lbl-verde { background-color: #8f09aa; }
+        .lbl-rosa { background-color: #e91e63; }
+        .lbl-oscuro { background-color: #305080; }
+
+      
+        body:has(#radio-azul:checked) { background-color: #af0000; }
+        body:has(#radio-verde:checked) { background-color: #7d27c4; }
+        body:has(#radio-rosa:checked) { background-color: #b31f50; }
+        body:has(#radio-oscuro:checked) { background-color: #2a5c8b; }
+
+        
+        body:has(#radio-oscuro:checked) .panel {
+            background-color: #2c3e50;
+            color: white;
+        }
+        body:has(#radio-oscuro:checked) h2 {
+            color: white;
+        }
+
+    
+        #radio-azul:checked ~ .panel .lbl-azul { border-color: #2980b9; transform: scale(1.1); }
+        #radio-verde:checked ~ .panel .lbl-verde { border-color: #27ae60; transform: scale(1.1); }
+        #radio-rosa:checked ~ .panel .lbl-rosa { border-color: #c2185b; transform: scale(1.1); }
+        #radio-oscuro:checked ~ .panel .lbl-oscuro { border-color: #ffffff; transform: scale(1.1); }
+
+    </style>
+</head>
+<body>
+
+   
+    <input type="radio" name="color-fondo" id="radio-azul" class="color-radio">
+    <input type="radio" name="color-fondo" id="radio-verde" class="color-radio">
+    <input type="radio" name="color-fondo" id="radio-rosa" class="color-radio">
+    <input type="radio" name="color-fondo" id="radio-oscuro" class="color-radio">
+
+
+        <h2>Elige un Fondo</h2>
+        <div class="btn-container">
+            <label for="radio-azul" class="color-label lbl-azul" title="Azul Claro"></label>
+            <label for="radio-verde" class="color-label lbl-verde" title="Verde Menta"></label>
+            <label for="radio-rosa" class="color-label lbl-rosa" title="Rosa Pastel"></label>
+            <label for="radio-oscuro" class="color-label lbl-oscuro" title="Modo Oscuro"></label>
+        </div>
+    </div>
+
+</body>
+</html>
