@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acordeón de Preguntas</title>
+    <style>
+        .faq-conteiner {
+            max-width: 600px;
+            margin: 40px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .faq-item {
+            background-color: #f8fafc;
+            border: 1px solid #a8a8a8;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        
+        }
+
+        .faq-item summary {
+            padding: 16px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #1e293b;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+        .faq-item summary ::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary ::after {
+            content: "+";
+            font-size: 20px;
+            color: #64748b;
+            transition: transform 0.2s ease;
+        }
+        .faq-content {
+            padding: 0 16px 16px 16px;
+            color: #475569;
+            line-height: 1.6;
+            font-size: 115px;
+
+        }
+        .faq-item [open] {
+            background-color: #888888;
+            border-color: #3b82f6;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+        }
+
+        .faq-item [open] summary {
+            color: #3b82f6;
+        }
+        .faq-item[open] summary ::after {
+            content: "-";
+            color: #3b82f6;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="faq-containeer">
+        <h2>Preguntas</h2>
+        <details class="faq-item">
+            <summary>¿Cuantos corazones tiene un pulpo?</summary>
+            <div class="faq-contest">
+                Un pulpo tiene 3 corazones en total (dos bombean sangre a las branquias y uno el resto del cuerpo)
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Cuanl es el animal terrestre más rápido del mundo?</summary>
+            <div class="faq-contest">
+                El animal terrestre más rápido del mundo es el Guepardo, que puede alcanzar velocidades de hasta 110-120 km/h.
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>¿Cual es el planeta con más lunas?</summary>
+            <div class="faq-contest">
+                EL planeta con más lunas es Saturno, tiene un recor con más de 270 Lunas oficialmente reconocidas.
+            </div>
+        </details>
+    </div>
+</body>
+
+</html>
