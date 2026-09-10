@@ -1,0 +1,66 @@
+body {
+    background-image: radial-gradient(circle, #790000, #222222);
+  }
+  
+.name {
+    color: rgb(134, 121, 207);
+    text-align: center;
+}
+.biografía {
+    color: rgb(95, 117, 165);
+    text-align: center;
+}
+.info {
+    color: rgb(75, 153, 140);
+    text-align: center;
+    margin: 10px;
+}
+.info2 {
+    color: rgb(75, 153, 140);
+    text-align: center;
+    margin: 10px;
+}
+.info3 {
+    color: rgb(75, 153, 140);
+    text-align: center;
+    margin: 10px;
+}
+.po {
+    color: rgb(95, 117, 165);
+    text-align: center ;
+    margin: 10px;
+}
+.pe {
+    color: rgb(95, 153, 140);
+    margin: 10px;
+}
+.pi {
+    color: rgb(95, 153, 140);
+    text-align: center;
+    margin: 10px;
+}
+.linea-separadora1 {
+    color: rgb(95, 117, 165);
+    text-align: center;
+    margin: 10px;
+}
+.linea-separadora2 {
+    color: rgb(134, 121, 207);
+    text-align: center;
+    margin: 10px;
+}
+.pk {
+    color: rgb(255, 121, 121);
+    text-align: center;
+    margin: 10px;
+}
+.pl {
+    color: rgb(255, 121, 121);
+    text-align: center;
+    margin: 10pxs;
+}
+.lm {
+    color: rgb(255, 121, 121);
+    text-align: center;
+    margin: 10px;
+}
