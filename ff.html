@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> // !
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-venta</title>
+    <!-- Vinculación con el archivo CSS externo -->
+
+    <link rel="stylesheet" href="ff.css">
+
+
+</head>
+<body>
+
+    <!-- SECCIÓN HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Cyber Realm 2077</h1>
+            <p>El RPG definitivo del futuro ya está en camino. Forjá tu propio destino.</p>
+            <button class="cta-btn" onclick="document.getElementById('preorder-zone').scrollIntoView({behavior: 'smooth'});">
+                Pre-ordena Ahora
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+       
+        <!-- INCENTIVOS DE PRE-VENTA -->
+        <section class="benefits">
+            <h2 class="section-title">Beneficios de Reservar Hoy</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Acceso Anticipado</h3>
+                    <p>Jugá a la Beta Cerrada 7 días antes del lanzamiento mundial oficial.</p>
+                </div>
+                <div class="card">
+                    <h3>Skins Exclusivas</h3>
+                    <p>Recibí el paquete de cosméticos "Neon Renegade" para tus personajes.</p>
+                </div>
+                <div class="card">
+                    <h3>Banda Sonora Digital</h3>
+                    <p>Descargá la música oficial del juego masterizada en alta fidelidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLA COMPARATIVA DE EDICIONES -->
+        <section class="editions" id="preorder-zone">
+            <h2 class="section-title text-center">Elegí tu Edición</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Contenido</th>
+                            <th>Estándar ($59.99)</th>
+                            <th>Deluxe ($79.99)</th>
+                            <th>Coleccionista ($119.99)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juego Base Digital</td>
+                            <td class="check">✔</td>
+                            <td class="check">✔</td>
+                            <td class="check">✔</td>
+                        </tr>
+                        <tr>
+                            <td>Incentivos de Pre-venta</td>
+                            <td class="check">✔</td>
+                            <td class="check">✔</td>
+                            <td class="check">✔</td>
+                        </tr>
+                        <tr>
+                            <td>Pase de Temporada (DLCs)</td>
+                            <td class="cross">✘</td>
+                            <td class="check">✔</td>
+                            <td class="check">✔</td>
+                        </tr>
+                        <tr>
+                            <td>Estatua Física (25cm)</td>
+                            <td class="cross">✘</td>
+                            <td class="cross">✘</td>
+                            <td class="check">✔</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="table-btn">Reservar</button></td>
+                            <td><button class="table-btn">Reservar</button></td>
+                            <td><button class="table-btn">Reservar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

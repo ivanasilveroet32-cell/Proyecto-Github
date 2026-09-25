@@ -1,0 +1,54 @@
+.hh {
+    color: rgb(7, 163, 15);
+    text-align: center;
+}
+.card {
+    color: rgb(67, 190, 98);
+    text-align: center;
+}
+.gg {
+    color: rgb(131, 131, 131);
+}
+.editions{
+    color: rgb(161, 86, 15);
+    text-align: center;
+}
+.table-responsive {
+    color: rgb(184, 96, 14);
+    text-align: center;
+}
+.section-title {
+    color: rgb(156, 110, 11);
+    text-align: center;
+}
+.imn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+}
+.imn img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px
+}
+.hk {
+    color: rgb(148, 90, 15);
+    text-align: center;
+}
+.re {
+    color: rgb(163, 93, 13);
+    text-align: center;
+}
+.yy {
+    color: rgb(73, 74, 75);
+    text-align: center;
+}
+.te {
+    color: rgb(90, 90, 90);
+    text-align: center;
+}
+.ii {
+    color: rgb(130, 24, 179);
+    text-align: center;
+}
