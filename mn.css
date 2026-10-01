@@ -1,0 +1,19 @@
+body {
+    background-image: radial-gradient(#57beb6, #dddddd);
+}
+.contenedor {
+   color: rgb(0, 0, 0);
+   text-align: center;
+}
+.título {
+   color: rgb(0, 0, 0);
+}
+.párrafo {
+   color: rgb(0, 0, 0);
+}
+.párraf {
+   color: rgb(0, 0, 0);
+}
+.boton {
+   color: rgb(0, 0, 0);
+}
