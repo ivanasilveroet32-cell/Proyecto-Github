@@ -1,0 +1,39 @@
+body {
+    background-image: radial-gradient(#57beb6, #dddddd);
+}
+.contenedor {
+    background-color: #57beb6;
+}
+.columna {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pincipal {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+}
+.largo {
+    color: #000000;
+}
+.columna1 {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a5b7e;
+}
+.action {
+    background: linear-gradient(153deg, #6ac2ce 0%, #439494 100%);
+    color: #ffffff;
+}
+.action:active {
+    transform: translate(-1px);
+}
