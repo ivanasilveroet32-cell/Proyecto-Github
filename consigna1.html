@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preventa Manhwa - Regalo de Cumpleaños</title>
+<style>
+:root {
+--bg-color: #0b0c10;
+--card-bg: #1f2833;
+--primary: #45f3ff;
+--secondary: #c5a880;
+--text-color: #ffffff;
+--text-muted: #c5c6c7;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--bg-color);
+color: var(--text-color);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.container {
+max-width: 600px;
+width: 90%;
+background: var(--card-bg);
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 8px 32px 0 rgba(0, 243, 255, 0.1);
+border: 1px solid rgba(69, 243, 255, 0.2);
+text-align: center;
+}
+
+.badge {
+background: var(--secondary);
+color: var(--bg-color);
+padding: 5px 15px;
+font-weight: bold;
+border-radius: 20px;
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+h1 {
+color: var(--primary);
+font-size: 2rem;
+margin-top: 15px;
+text-transform: uppercase;
+}
+
+p {
+color: var(--text-muted);
+line-height: 1.6;
+}
+
+.form-group {
+margin: 25px 0;
+text-align: left;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+color: var(--primary);
+font-weight: 600;
+}
+
+input[type="date"], select {
+width: 100%;
+padding: 12px;
+background: #0b0c10;
+border: 1px solid #45f3ff;
+border-radius: 8px;
+color: white;
+font-size: 1rem;
+box-sizing: border-box;
+outline: none;
+}
+
+input[type="date"]:focus {
+box-shadow: 0 0 10px rgba(69, 243, 255, 0.5);
+}
+
+button {
+width: 100%;
+background: linear-gradient(45deg, #45f3ff, #00a8ff);
+color: #0b0c10;
+border: none;
+padding: 14px;
+font-size: 1.1rem;
+font-weight: bold;
+border-radius: 8px;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(69, 243, 255, 0.4);
+}
+
+/* Espacio para mostrar el resultado con JS */
+#resultado {
+margin-top: 20px;
+padding: 15px;
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.05);
+display: none;
+border-left: 5px solid var(--primary);
+text-align: left;
+}
+</style>
+</head>
+<body>
+    
+
+<div class="container">
+<span class="badge">Exclusivo Preventa</span>
+<h1>Tu Regalo de Cumpleaños</h1>
+<p>Ingresá tu fecha de nacimiento. Si comprás el manhwa en tu mes de cumpleaños, te sumamos un regalo especial a tu paquete de preventa.</p>
+
+<!-- Formulario para los ejercicios -->
+<div class="form-group">
+<label for="fechaNacimiento">Seleccioná tu fecha de cumpleaños:</label>
+<input type="date" id="fechaNacimiento">
+</div>
+
+<button id="btnVerificar">Reclamar Mi Regalo</button>
+
+<!-- Contenedor de respuestas -->
+<div id="resultado">
+
+<script src="consigna1.js"></script>
+</body>
+</html>
