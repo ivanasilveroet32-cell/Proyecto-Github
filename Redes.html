@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización de Computadoras</title>
+    <link rel="stylesheet" href="Organización.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>01. Redes</h1>
+        </header>
+
+        <section class="teoria">
+            <p>La <strong>Organización de Computadoras</strong> estudia los componentes físicos del sistema (hardware) y la manera en que se interconectan para ejecutar instrucciones mediante el modelo Von Neumann.</p>
+            <p>Los elementos clave son la CPU (procesador), la memoria RAM (almacenamiento temporal) y los periféricos de Entrada y Salida.</p>
+        </section>
+
+        <section class="quiz-section">
+            <h2>Cuestionario de Autoevaluación</h2>
+            <p style="color: var(--text-muted); font-size: 14px;">Responde las preguntas y presiona el botón al final para validar tus conocimientos.</p>
+
+            <form id="quizForm">
+                
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">1.  ¿Qué protocolo o dirección identifica de forma única a un dispositivo conectado a una red?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p1" value="incorrecta"> A) El cable Ethernet
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p1" value="correcta"> B)  La Dirección IP 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">2. En una red hogareña, ¿qué dispositivo distribuye la señal de internet (por cable o Wi-Fi)?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p2" value="correcta"> A) El Router
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p2" value="incorrecta"> B)  El Módem de fibra solamente
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">3. ¿Qué tipo de red cubre un área geográfica pequeña, como una casa, escuela o una oficina?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p3" value="incorrecta"> A) Red WAN
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p3" value="correcta"> B)  Red LAN
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-verificar" onclick="validarCuestionario()">Verificar Respuestas</button>
+            </form>
+        </section>
+    </div>
+    <a href="Principal.html" class="btn-home">&larr; Atras</a>
+
+    <script src="Redes.js"></script>
+</body>
+</html>
