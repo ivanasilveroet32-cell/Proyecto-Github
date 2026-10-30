@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseint</title>
+    <link rel="stylesheet" href="Pseint.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>    
+            <h1>01. Pseint</h1>
+        </header>
+
+        <section class="teoria">
+            <p>La <strong>Organización de Computadoras</strong> estudia los componentes físicos del sistema (hardware) y la manera en que se interconectan para ejecutar instrucciones mediante el modelo Von Neumann.</p>
+            <p>Los elementos clave son la CPU (procesador), la memoria RAM (almacenamiento temporal) y los periféricos de Entrada y Salida.</p>
+        </section>
+
+        <section class="quiz-section">
+            <h2>Cuestionario de Autoevaluación</h2>
+            <p style="color: var(--text-muted); font-size: 14px;">Responde las preguntas y presiona el botón al final para validar tus conocimientos.</p>
+
+            <form id="quizForm">
+                
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">1. ¿Qué comando se utiliza en PSeInt para mostrar texto o resultados en la pantalla del usuario?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p1" value="incorrecta"> A) Leer
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p1" value="correcta"> B)  Escribir
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">2. ¿Qué comando se utiliza en PSeInt para guardar lo que el usuario escribe con su teclado en una variable?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p2" value="correcta"> A) Leer
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p2" value="incorrecta"> B)  Escribir
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">3. ¿Cuál es el símbolo o comando correcto para asignarle un valor a una variable en PSeInt?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p3" value="incorrecta"> A) El signo igual =
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p3" value="correcta"> B) La flecha de asignación <-
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-verificar" onclick="validarCuestionario()">Verificar Respuestas</button>
+            </form>
+        </section>
+    </div>
+    <a href="Principal.html" class="btn-home">&larr; Atras</a>
+
+    <script src="Pseint.js"></script>
+</body>
+</html>

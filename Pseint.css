@@ -1,0 +1,119 @@
+:root {
+    --bg-dark: #111827;
+    --panel-bg: #1f2937;
+    --accent-blue: #38bdf8;
+    --accent-green: #4ade80;
+    --accent-red: #f87171;
+    --text-light: #f3f4f6;
+    --text-muted: #9ca3af;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background: linear-gradient(to right, #db3434, #2e8dcc) !important;
+    height: 100vh;
+    margin: 0;
+    color: var(--text-light);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn-home {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--accent-blue);
+    border: 1px solid var(--accent-blue);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+
+.btn-home:hover {
+    background-color: var(--accent-blue);
+    color: var(--bg-dark);
+}
+
+h1 {
+    color: var(--accent-blue);
+    border-bottom: 2px dashed var(--panel-bg);
+    padding-bottom: 10px;
+}
+
+.teoria {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border-left: 5px solid var(--accent-blue);
+}
+
+.quiz-section {
+    background-color: var(--panel-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.quiz-section h2 {
+    color: var(--accent-blue);
+    margin-top: 0;
+}
+
+.pregunta-block {
+    background-color: #858585;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.pregunta-texto {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.opciones-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcion-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.opcion-label:hover {
+    background-color: rgba(56, 189, 248, 0.1);
+}
+
+.btn-verificar {
+    background-color: var(--accent-blue);
+    color: var(--bg-dark);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.btn-verificar:hover {
+    background-color: #0ea5e9;
+}
